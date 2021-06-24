@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-md bg-pink navbar-black ">
+      <!-- Brand -->
+      <img class="image" src="./assets/homepics/logo.jfif" alt="no img"  style="width: 50px; height: 50px;"><br>
+      <a class="navbar-brand" routerLink="#">SPANDHU EVENT PLANNERS</a>
+   
+        
+       
+      
+        <!-- Links -->
+        <ul class="navbar-nav">  
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/about">ABOUT</a>
+          </li><li class="nav-item">
+            <a class="nav-link" routerLink="/gallery">GALLERY</a>
+          </li>
+      
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" routerLink="/packages" id="navbardrop" data-toggle="dropdown">
+              PACKAGES
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" routerLink="/packages/birthday">BIRTHDAY'S</a>
+              <a class="dropdown-item" routerLink="/packages/socialevents">SOCIAL EVENTS</a>
+              <a class="dropdown-item" routerLink="/packages/wedding">WEDDING</a>
+              <a class="dropdown-item" routerLink="/packages/coorparatemeetings">COORPORATE MEETINGS</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/feedback">FEEDBACK</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contactus">CONTACTUS</a>
+          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/book">BOOK</a>
+            </li>
+         
+        </ul>
+      </nav>
+      <div class="jumbotron">
+        
+        
+         <h1 class="header">SPANDHU EVENT PLANNERS</h1>
+         <h6>"Life is an event. Make it memorable."</h6>
+        
+        </div>
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div>
+        <router-outlet></router-outlet>
+      </div> 
+         
+    </body>
+    <div>
+      <app-footer></app-footer>
+      
+    </div>
+</html>
+
+
